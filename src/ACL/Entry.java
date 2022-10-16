@@ -17,7 +17,7 @@ public class Entry {
 	// this.r = r
 	// this.emp = e
 	// this.time = new Java.getTime();
-	private Entry(Room r, Employee e) {
+	public Entry(Room r, Employee e) {
 		this.r = r;
 		this.employee = e;
 		this.time = LocalDateTime.now();

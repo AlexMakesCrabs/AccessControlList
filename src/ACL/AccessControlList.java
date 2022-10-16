@@ -44,7 +44,7 @@ public class AccessControlList {
     public static void main(String[] args){
         AccessControlList a = new AccessControlList();
         
-        a.push(new Entry(""));
+        a.push(new Entry(new Room("Room1"),new Employee("Jason")));
         
         
         
