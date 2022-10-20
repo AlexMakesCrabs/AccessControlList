@@ -11,6 +11,14 @@ public class Employee {
         Employee e1 = new Employee("Mark");
         e1.getName();
     }
+    
+    @Override
+    public boolean equals(Object o) {
+    	if (o instanceof Employee) {
+    		if (getName().equals(((Employee)o).getName())) return true;
+    	}
+    	return false;
+    }
 
     public Employee(String name)
     {

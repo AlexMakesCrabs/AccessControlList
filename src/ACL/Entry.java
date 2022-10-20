@@ -12,15 +12,17 @@ public class Entry {
 	private Room r;
 	private LocalDateTime time;
 	private Employee employee;
+	private boolean isEntry;
 	
 	// private Entry(Room r, Employee e);
 	// this.r = r
 	// this.emp = e
 	// this.time = new Java.getTime();
-	public Entry(Room r, Employee e) {
+	public Entry(Room r, Employee e,boolean isEntry) {
 		this.r = r;
 		this.employee = e;
 		this.time = LocalDateTime.now();
+		this.isEntry = isEntry;
 	}
 	
 	@Override
