@@ -8,7 +8,7 @@ public class Room {
 		this.roomName = name;
 	}
 	
-	public String getRoom(){
+	public String getRoomName(){
 		return roomName;
 	}
 	
@@ -17,8 +17,16 @@ public class Room {
 	}
 	
 	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Room) {
+			if (getRoomName().equals(((Room)o).getRoomName())) return true;
+		}
+		return false;
+	}
+	
+	@Override
 	public String toString() {
-		return getRoom();
+		return getRoomName();
 	}
 	
 	public static void main(String[] args) {

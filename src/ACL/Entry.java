@@ -29,7 +29,7 @@ public class Entry {
 	public String toString(){
 		String r = "";
 		r += this.employee.getName()+" Entered ";
-		r += this.r.getRoom() + " @ time: ";
+		r += this.r.getRoomName() + " @ time: ";
 		r += DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss").format(this.time);
 		return r;
 	}
@@ -40,7 +40,7 @@ public class Entry {
 		test.format(LocalDateTime.now());
 		System.out.println(test.format(LocalDateTime.now()));
 		
-		Entry e = new Entry(new Room("room1"), new Employee("Andy"));
+		Entry e = new Entry(new Room("room1"), new Employee("Andy"),true);
 		System.out.println(e.toString());
 		
 	}
