@@ -33,5 +33,10 @@ import javafx.geometry.Side;
 
 
 public class GUI {
+	protected Interface a = new Interface();
+	
+	public static void main(String[] args) {
+		
+	}
 
 }
